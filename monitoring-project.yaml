@@ -19,5 +19,4 @@ spec:
   #       - p, proj:TOOLS_ARGOCD_PROJ:app-sync, applications, sync, TOOLS_ARGOCD_PROJ/*, allow
   #       - p, proj:TOOLS_ARGOCD_PROJ:app-sync, applications, get, TOOLS_ARGOCD_PROJ/*, allow
   sourceRepos:
-    - https://github.com/spezam/grafana.git
-    - https://github.com/spezam/prometheus.git
+    - https://github.com/spezam/grafana.gi
