@@ -1,0 +1,22 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: monitoring
+  namespace: argocd
+spec:
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  description: Monitoring tools
+  destinations:
+    - namespace: '*'
+      server: '*'
+  # roles:
+  #   - description: app-sync
+  #     name: app-sync
+  #     policies:
+  #       - p, proj:TOOLS_ARGOCD_PROJ:app-sync, applications, sync, TOOLS_ARGOCD_PROJ/*, allow
+  #       - p, proj:TOOLS_ARGOCD_PROJ:app-sync, applications, get, TOOLS_ARGOCD_PROJ/*, allow
+  sourceRepos:
+    - '*'
