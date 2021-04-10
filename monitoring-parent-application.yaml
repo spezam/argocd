@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     path: namespaces/argocd/test
-    repoURL: https://github.com/spezam/monitoring.git
+    repoURL: https://github.com/spezam/argocd-applications.git
     targetRevision: HEAD
   project: monitoring
   syncPolicy:
