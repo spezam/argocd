@@ -10,7 +10,7 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    path: argocd/test
+    path: namespaces/argocd/test
     repoURL: https://github.com/spezam/monitoring.git
     targetRevision: HEAD
   project: monitoring
