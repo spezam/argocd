@@ -8,10 +8,10 @@ spec:
   destination:
     name: ''
     namespace: argocd
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
   source:
     path: argocd/test
-    repoURL: 'https://github.com/spezam/monitoring.git'
+    repoURL: https://github.com/spezam/monitoring.git
     targetRevision: HEAD
   project: monitoring
   syncPolicy:
