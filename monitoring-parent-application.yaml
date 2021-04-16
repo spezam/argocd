@@ -15,4 +15,5 @@ spec:
     targetRevision: HEAD
   project: monitoring
   syncPolicy:
-    automated: null
+    automated:
+      prune: true
