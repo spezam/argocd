@@ -1,0 +1,19 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: monitoring-parent
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  source:
+    path: namespaces/argocd/gcp
+    repoURL: https://github.com/spezam/argocd-applications.git
+    targetRevision: HEAD
+  project: monitoring
+  syncPolicy:
+    automated:
+      prune: true
