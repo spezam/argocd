@@ -13,7 +13,7 @@ spec:
     path: namespaces/argocd/gcp
     repoURL: https://github.com/spezam/argocd-applications.git
     targetRevision: HEAD
-  project: monitoring
+  project: tools
   syncPolicy:
     automated:
       prune: true

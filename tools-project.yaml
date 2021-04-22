@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: monitoring
+  name: tools
   namespace: argocd
 spec:
   clusterResourceWhitelist:
